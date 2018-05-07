@@ -72,7 +72,7 @@ var app = {
 }
 
 function playSound(e){
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const audio = document.querySelector(`auhdio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
   if(!audio) return; //stop the function
   app.data.currentAudioObject = audio;
