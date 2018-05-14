@@ -72,10 +72,10 @@
         const now = new Date(); //curent date/time obtained here
 
         const milliseconds = now.getMilliseconds(); //current second
+        // console.log(milliseconds)
         const seconds = now.getSeconds(); //current second
-        const secondsDegrees = (((seconds * 1000 + milliseconds) / 60000) * 360) + 90; /* fraction of
-        seconds in a minute converted to degrees plus 90 to compensate for original
-        90deg transform */
+        const secondsDegrees = (((seconds * 1000 + milliseconds) / 60000) * 360) + 90;
+
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
         // rotatation applied based on time value translated into degrees
 
